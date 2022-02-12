@@ -10,3 +10,17 @@
   font-weight: bold;
   font-style: normal;
 }
+.header {
+  min-height: 30vh;
+}
+.header img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  position: relative;
+  transform: translateY(25%);
+  margin-bottom: -150px;
+  max-width: 250px;
+  height: auto;
+  z-index: 3;
+}

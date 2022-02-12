@@ -10,3 +10,8 @@
   font-weight: bold;
   font-style: normal;
 }
+.footer {
+  background-color: #e73c7e;
+  margin-top: auto;
+  font-family: Play, serif;
+}

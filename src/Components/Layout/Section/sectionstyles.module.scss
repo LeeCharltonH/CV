@@ -1,0 +1,45 @@
+@import "../../../Styles/combined.scss";
+
+
+.sectionTop:nth-child(1){
+    width: 100%;
+    height: 100px;
+    z-index: -2;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: rotate(5deg);
+}
+
+.sectionTop:nth-child(2){
+    width: 100%;
+    height: 100px;
+    z-index: -2;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    transform: rotate(-2deg);
+}
+
+.section {
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+.section:nth-child(1){
+    padding-top: 70px;
+}
+
+.section:nth-child(odd){
+    background-color: white;
+}
+
+.sectionItem {
+    max-width: 900px;
+    margin: auto;
+}

@@ -1,0 +1,36 @@
+@import "../../../Styles/combined.css";
+
+.nav {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  ul {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    float: right;
+    height: 100%;
+    li {
+      border-radius: 5px;
+      float: left;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+      }
+    }
+    a:hover {
+      background-color: #23d5ab;
+      color: white !important;
+      text-decoration: none;
+    }
+  }
+}

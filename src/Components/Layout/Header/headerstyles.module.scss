@@ -1,0 +1,16 @@
+@import "../../../Styles/combined.scss";
+
+.header {
+  min-height: 30vh;
+    img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    position: relative;
+    transform: translateY(25%);
+    margin-bottom: -150px;
+    max-width: 250px;
+    height: auto;
+    z-index: 3;
+  }
+}

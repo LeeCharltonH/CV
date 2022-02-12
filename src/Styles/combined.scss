@@ -1,2 +1,20 @@
-@import "./globalStyles/fonts.scss";
-@import "./globalStyles/colors.scss";
+@font-face {
+    font-family: 'Play';
+    src: url(../Assets/Fonts/Play-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url(../Assets/Fonts/Play-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+$Play: Play, serif;
+
+$orange:#ee7752;
+$pink:#e73c7e;
+$blue:#23a6d5;
+$green:#23d5ab;

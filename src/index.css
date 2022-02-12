@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Play";
-  src: url(../../Assets/Fonts/Play-Regular.ttf);
+  src: url(../Assets/Fonts/Play-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Play";
-  src: url(../../Assets/Fonts/Play-Bold.ttf);
+  src: url(../Assets/Fonts/Play-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
@@ -35,4 +35,25 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, button {
+  font-family: "Play", sans-serif;
+  color: #343434;
+}
+
+p {
+  line-height: 2;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
 }
