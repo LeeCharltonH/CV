@@ -1,7 +1,56 @@
 @import "../../../Styles/combined.scss";
 
-.footer{
-    background-color: $pink;
-    margin-top: auto;
-    font-family: $Play;
+.footer {
+  background-color: black;
+  margin-top: auto;
+  font-family: $Play;
+  width: 100%;
+  text-align: center;
+  ul {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 20px 0;
+    width: 100%;
+    padding: 0;
+  }
+  li {
+    padding: 0 5px;
+    font-size: 1.2em;
+    line-height: 2;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+.footerContainer {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 5px;
+  
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  flex-direction: column;
+}
+
+.copyright {
+    font-size: 0.8em;
+}
+
+@media (max-width: 600px){
+    .footerContent{
+        padding: 0px 40px;
+    }
 }
