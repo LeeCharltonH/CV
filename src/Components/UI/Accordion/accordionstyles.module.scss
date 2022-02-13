@@ -1,0 +1,53 @@
+@import "../../../Styles/combined.scss";
+
+
+.accordionHeader{
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.accordionHeaderItems {
+    h3{
+        margin: 15px 0;
+        font-size: 1.5em;
+    }    
+    p{
+            margin: 0px 0;
+            font-size: 0.9em;
+        }
+}
+
+.accordionHeader:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.active, .accordionHeader:hover{
+    background-color: transparent;
+}
+
+.accordionBody{
+        overflow: hidden;
+        padding-right: 30px;
+}
+
+.accordionContainer{
+    border-left: 3px solid #23d5ab;
+    padding-left: 30px;
+}
+
+

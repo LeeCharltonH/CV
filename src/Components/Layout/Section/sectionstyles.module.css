@@ -48,6 +48,10 @@
   background-color: white;
 }
 
+.section:nth-child(even) h1, .section:nth-child(even) h2, .section:nth-child(even) h3, .section:nth-child(even) h4, .section:nth-child(even) h5, .section:nth-child(even) p {
+  color: white;
+}
+
 .sectionItem {
   max-width: 900px;
   margin: auto;

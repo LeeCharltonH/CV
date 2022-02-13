@@ -17,13 +17,13 @@ const Portfolio = (props) => {
           title="Project 2 - Bear Ambition"
           src={require("../../../Assets/Images/portfolio-bear-ambition.png")}
           alt="Project 2 - Bear Ambition"
-          link="https://leecharltonh.github.io/pairs-game/"
+          link="https://leecharltonh.github.io/bear-ambition/"
         />
         <PortfolioItem
           title="Project 3 - Personal Portfolio v1"
           src={require("../../../Assets/Images/portfolio-personal-portfolio.png")}
           alt="Project 3 - Personal Portfolio v1"
-          link="https://leecharltonh.github.io/pairs-game/"
+          link="https://leecharltonh.github.io/personal-portfolio/"
         />
       </Flex>
     </Section>

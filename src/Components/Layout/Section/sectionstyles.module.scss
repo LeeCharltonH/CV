@@ -39,6 +39,11 @@
     background-color: white;
 }
 
+.section:nth-child(even){
+    h1, h2, h3, h4, h5, p{
+    color: white;}
+}
+
 .sectionItem {
     max-width: 900px;
     margin: auto;

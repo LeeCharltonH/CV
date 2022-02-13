@@ -10,3 +10,8 @@
   font-weight: bold;
   font-style: normal;
 }
+.main {
+  overflow-x: hidden;
+  padding-top: 50px;
+  z-index: 0;
+}

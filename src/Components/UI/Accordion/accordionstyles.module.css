@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Play";
+  src: url(../Assets/Fonts/Play-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Play";
+  src: url(../Assets/Fonts/Play-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+.accordionHeader {
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.accordionHeaderItems h3 {
+  margin: 15px 0;
+  font-size: 1.5em;
+}
+.accordionHeaderItems p {
+  margin: 0px 0;
+  font-size: 0.9em;
+}
+
+.accordionHeader:after {
+  content: "➕";
+  font-size: 13px;
+  color: #777;
+}
+
+.active:after {
+  content: "➖";
+}
+
+.active, .accordionHeader:hover {
+  background-color: transparent;
+}
+
+.accordionBody {
+  overflow: hidden;
+  padding-right: 30px;
+}
+
+.accordionContainer {
+  border-left: 3px solid #23d5ab;
+  padding-left: 30px;
+}
