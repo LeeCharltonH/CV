@@ -2,7 +2,7 @@
 .nav {
   width: 100%;
   padding: 10px;
-  background-color: transparent;
+  background-color: #23a6d5;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -28,7 +28,5 @@
   color: white;
 }
 .nav ul a:hover {
-  background-color: #23d5ab;
-  color: white !important;
   text-decoration: none;
 }
