@@ -9,8 +9,6 @@ const Section = (props) => {
     setSectionTop(true)}
   }, []);
 
-  
-
   return (
     <section id={props.id} className={styles.section}>
       {sectionTop && (

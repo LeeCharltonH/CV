@@ -10,7 +10,7 @@
   font-weight: bold;
   font-style: normal;
 }
-.skillsCardContainer {
+.flexContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

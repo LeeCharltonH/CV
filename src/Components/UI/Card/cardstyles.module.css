@@ -10,8 +10,16 @@
   font-weight: bold;
   font-style: normal;
 }
-.skillsCardContainer {
+.cardItem {
+  max-width: 120px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: white;
+  margin: 5px;
+}
+.cardItem img {
+  width: 100px;
 }
