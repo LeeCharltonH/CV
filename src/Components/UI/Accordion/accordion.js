@@ -18,10 +18,11 @@ const Accordion = (props) => {
         )}
         id="accordionbtn"
         onClick={expandAccordion}
-      ><div className={styles.accordionHeaderItems}>
-        <h3>{props.title}</h3>
-        <p>{props.employer}</p>
-        <p>{props.date}</p>
+      >
+        <div className={styles.accordionHeaderItems}>
+          <h3>{props.title}</h3>
+          <p>{props.employer}</p>
+          <p>{props.date}</p>
         </div>
       </div>
       {accordionOpen && (

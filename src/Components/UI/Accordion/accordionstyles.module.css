@@ -36,15 +36,16 @@
 
 .accordionHeader:after {
   content: "➕";
-  font-size: 13px;
-  color: #777;
+  font-size: 18px;
+  color: #fff;
 }
 
 .active:after {
   content: "➖";
 }
 
-.active, .accordionHeader:hover {
+.active,
+.accordionHeader:hover {
   background-color: transparent;
 }
 
