@@ -10,3 +10,15 @@
     margin: 10px 0;
   }
 }
+
+.socialIcons{
+  width: 150px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.icon {
+  font-size: 1.6em;
+}

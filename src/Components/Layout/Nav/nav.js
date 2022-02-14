@@ -6,29 +6,24 @@ import classNames from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = (props) => {
+  const [navIconState, setNavIcon] = useState(false);
 
-    const [navIconState, setNavIcon] = useState(false);
+  const navClick = () => {
+    setNavIcon(!navIconState);
+    console.log(navIconState);
+  };
 
-    const navClick = () => {
-        setNavIcon(!navIconState);
-        console.log(navIconState);
-    };
+  const navLiClick = (navIconState) => {
+    setNavIcon(!navIconState);
+  };
 
-    const navLiClick = (navIconState) => {
-        setNavIcon(!navIconState);
-    };
+  useEffect(() => {
+    let navListItems = document.querySelectorAll("#navList li");
 
-    useEffect(() => {
-        let navListItems = document.querySelectorAll("#navList li");
-    
-        
-        for (let x = 0; x < navListItems.length; x++) {
-          navListItems[x].addEventListener("click", navLiClick);
-        }
-    
-      }, []);
-
-      
+    for (let x = 0; x < navListItems.length; x++) {
+      navListItems[x].addEventListener("click", navLiClick);
+    }
+  }, []);
 
   return (
     <nav className={styles.nav}>
@@ -59,10 +54,13 @@ const Nav = (props) => {
           </HashLink>
         </li>
         <div className={styles.navSocial}>
-            <p>Socials</p>
-        <div className={styles.navSocialIcons}>
+          <p>Socials</p>
+          <div className={styles.navSocialIcons}>
             <div>
-              <a href="https://www.instagram.com/leecharltonhassall/" target="_blank">
+              <a
+                href="https://www.instagram.com/leecharltonhassall/"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "instagram"]}
                   className={styles.icon}
@@ -86,18 +84,17 @@ const Nav = (props) => {
               </a>
             </div>
           </div>
-          </div>
-      </ul>
-      
-        <div className={classNames(
-            styles.navIcon1,
-            navIconState && styles.open)
-            } onClick={navClick}>
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
-      
+      </ul>
+
+      <div
+        className={classNames(styles.navIcon1, navIconState && styles.open)}
+        onClick={navClick}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 };
