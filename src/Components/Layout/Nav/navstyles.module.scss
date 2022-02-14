@@ -106,9 +106,28 @@
   transform: rotate(-135deg);
 }
 
+.navSocial {
+  display: none;
+}
+
 @media (max-width:600px){
   .navIcon1 {
     display: block;
+  }
+  .navSocial{
+    display: block;
+    margin:auto;
+    max-width: 200px;
+    text-align: center;
+    padding-bottom: 20px ;
+    p{
+      font-size:0.6em;
+    }
+  }
+  .navSocialIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
   }
   .nav{
     font-size: 2em;
@@ -117,6 +136,8 @@
     }
     ul{
       float: left;
+      width: 100%;
+      margin: 0;
     li{
       float:none;
     }
