@@ -8,9 +8,12 @@ const PortfolioItem = (props) => {
         target="_blank"
       >
         <div className={styles.overlay}>
-          <h3>{props.title}</h3>
+          
         </div>
         <img src={props.src} alt={props.alt} />
+        <div className={styles.title}>
+        <p>{props.title}</p>
+        </div>
       </a>
     </div>
   );
