@@ -21,12 +21,10 @@
 .portfolioItem img {
   width: 100%;
 }
-
-a {
+.portfolioItem a {
   text-decoration: none;
 }
-
-p {
+.portfolioItem p {
   font-weight: bold;
   color: white;
   margin: 0;

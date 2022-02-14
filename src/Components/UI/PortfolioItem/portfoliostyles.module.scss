@@ -10,22 +10,21 @@
   img {
     width: 100%;
   }
+  a {
+    text-decoration: none;
+  }
+  p {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+  }
 }
 
-a {
-  text-decoration: none;
-}
 
-p {
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  line-height: 1.2;
-}
 
 .title {
   padding: 10px;
-  
 }
 
 @media (max-width:600px){
