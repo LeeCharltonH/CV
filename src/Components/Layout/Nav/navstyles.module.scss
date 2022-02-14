@@ -2,10 +2,10 @@
 
 .nav {
   width: 100%;
+  min-height: 34px;
   padding: 10px;
   background-color: #23a6d5;;
   position: fixed;
-  width: 100%;
   z-index: 1000;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -13,11 +13,11 @@
     list-style-type: none;
     margin: 0 10px;
     padding: 0;
-    float: right;
+    float: right; //set to right for desktop
     height: 100%;
     li {
       border-radius: 5px;
-      float: left;
+      float: left; //set to left for desktop
       a {
         display: block;
         text-decoration: none;
@@ -25,10 +25,101 @@
         text-align: center;
         font-weight: 600;
         color: white;
+        text-align: left;
+        font-size: 1em; //set to 1em for desktop
       }
     }
     a:hover {
       text-decoration: none;
     }
   }
+}
+
+.navIcon1 {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 28px;
+  margin: 0px 0;
+  right:30px;
+  top:10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.navIcon1 span{
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.navIcon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.navIcon1 span:nth-child(2) {
+  top: 14px;
+}
+
+.navIcon1 span:nth-child(3) {
+  top: 28px;
+}
+
+.navIcon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.navIcon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.navIcon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+@media (max-width:600px){
+  .navIcon1 {
+    display: block;
+  }
+  .nav{
+    font-size: 2em;
+    ul.hide{
+      display: none;
+    }
+    ul{
+      float: left;
+    li{
+      float:none;
+    }
+  }
+}
 }

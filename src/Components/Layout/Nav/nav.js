@@ -1,10 +1,20 @@
 import styles from "./navstyles.module.css";
 import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
+import classNames from "classnames";
 
 const Nav = (props) => {
+
+    const [navIconState, setNavIcon] = useState(false);
+
+    const navClick = () => {
+        setNavIcon(!navIconState);
+        console.log(navIconState);
+    };
+
   return (
     <nav className={styles.nav}>
-      <ul>
+      <ul className={classNames(!navIconState && styles.hide)}>
         <li>
           <HashLink smooth to="/#about">
             About
@@ -31,6 +41,16 @@ const Nav = (props) => {
           </HashLink>
         </li>
       </ul>
+      
+        <div className={classNames(
+            styles.navIcon1,
+            navIconState && styles.open)
+            } onClick={navClick}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
     </nav>
   );
 };
