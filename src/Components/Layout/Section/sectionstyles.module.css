@@ -35,7 +35,7 @@
 .section {
   position: relative;
   box-sizing: border-box;
-  padding: 10px 20px 75px 20px;
+  padding: 40px 20px 60px 20px;
   width: 100%;
   z-index: 1;
 }
@@ -48,7 +48,7 @@
   background-color: white;
 }
 
-.section:nth-child(even) h1, .section:nth-child(even) h2, .section:nth-child(even) h3, .section:nth-child(even) h4, .section:nth-child(even) h5, .section:nth-child(even) p {
+.section:nth-child(even) h1, .section:nth-child(even) h2, .section:nth-child(even) h3, .section:nth-child(even) h4, .section:nth-child(even) h5, .section:nth-child(even) p, .section:nth-child(even) li {
   color: white;
 }
 
