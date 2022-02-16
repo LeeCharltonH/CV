@@ -21,13 +21,14 @@ const Accordion = (props) => {
       >
         <div className={styles.accordionHeaderItems}>
           <h3>{props.title}</h3>
-          <p>{props.employer}</p>
+          <p>{props.company}</p>
           <p>{props.date}</p>
         </div>
       </div>
       {accordionOpen && (
         <div className={styles.accordionBody}>
-          <p>{props.body}</p>
+          <p>{props.p1}</p>
+          <p>{props.p2}</p>
         </div>
       )}
       <hr />
