@@ -40,6 +40,8 @@ const History = (props) => {
     );
   }
 
+  
+
   return (
     <Section id="experience" h2="Experience">
       
@@ -51,6 +53,9 @@ const History = (props) => {
           date={experienceItem.date}
           p1={experienceItem.p1}
           p2={experienceItem.p2}
+          achievemnt1={experienceItem.achievemnt1}
+          achievemnt2={experienceItem.achievemnt2}
+          achievemnt3={experienceItem.achievemnt3}
         />
       )}
     </Section>

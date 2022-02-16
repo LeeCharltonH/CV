@@ -1,6 +1,7 @@
 import styles from "./accordionstyles.module.scss";
 import { useState } from "react";
 import classNames from "classnames";
+import AccordionList from "./accordionlist";
 
 const Accordion = (props) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
@@ -9,6 +10,9 @@ const Accordion = (props) => {
     setAccordionOpen(!accordionOpen);
   };
 
+  
+
+  
   return (
     <article className={styles.accordionContainer}>
       <div
@@ -29,7 +33,14 @@ const Accordion = (props) => {
         <div className={styles.accordionBody}>
           <p>{props.p1}</p>
           <p>{props.p2}</p>
+          <AccordionList 
+          ListTitle={"Key Achievements"}
+          achievemnt1={props.achievemnt1}
+          achievemnt2={props.achievemnt2}
+          achievemnt3={props.achievemnt3}/>
+          
         </div>
+        
       )}
       <hr />
     </article>
