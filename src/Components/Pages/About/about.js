@@ -1,6 +1,7 @@
 import Section from "../../Layout/Section/section";
 import styles from "./aboutstyles.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { HashLink } from "react-router-hash-link";
 
 const About = (props) => {
   return (
@@ -32,6 +33,7 @@ const About = (props) => {
         </div>
       </div>
       <h1>Lee Charlton-Hassall CV</h1>
+      <h2>Front End Developer</h2>
       <ul className={styles.contactDetails}>
         <li>
           <FontAwesomeIcon icon="fa-solid fa-location-dot" /> London
@@ -44,11 +46,23 @@ const About = (props) => {
           <a href="mailto:leehassall@hotmail.co.uk">leehassall@hotmail.co.uk</a>
         </li>
       </ul>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odio fugit
-        aperiam voluptatibus autem sunt similique suscipit, cupiditate veniam
-        itaque, eveniet a, reiciendis vero consequuntur. Est, blanditiis odit?
-      </p>
+      <div className={styles.introCopy}>
+        <p>
+          Starting out in the commercial sector of digital marketing, I found my
+          calling in front end development. My passion lies in enriching the
+          user experience with easy to use web applications that are both well
+          designed and functional.
+        </p>
+        <p>
+          Reach out to discuss any new opportunities using the contact form
+          below!
+        </p>
+        <div>
+          <HashLink smooth to="/#contact">
+            <button type="submit">Contact Me</button>
+          </HashLink>
+        </div>
+      </div>
     </Section>
   );
 };

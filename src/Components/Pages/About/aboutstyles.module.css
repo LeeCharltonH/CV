@@ -12,7 +12,7 @@
 }
 .contactDetails {
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
   list-style: none;
 }
 .contactDetails li {
@@ -31,4 +31,25 @@
 
 .icon {
   font-size: 1.6em;
+}
+
+button {
+  background-color: #ee7752;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  min-width: 100px;
+  border: 3px solid #ee7752;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #ee7752;
+  color: black;
+  cursor: pointer;
+}
+
+.introCopy {
+  max-width: 800px;
 }
