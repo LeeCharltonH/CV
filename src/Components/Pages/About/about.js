@@ -48,10 +48,11 @@ const About = (props) => {
       </ul>
       <div className={styles.introCopy}>
         <p>
-          Starting out in the commercial sector of digital marketing, I found my
-          calling in front end development. My passion lies in enriching the
-          user experience with easy to use web applications that are both well
-          designed and functional.
+          Starting out in the commercial sector of digital marketing I
+          discovered a passion for frontend development and decided to
+          transition my career into software engineering in 2021. I am skilled
+          in enriching the user experience with easy to use web applications
+          that are both well designed and functional.
         </p>
         <p>
           Reach out to discuss any new opportunities using the contact form
