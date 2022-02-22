@@ -48,11 +48,12 @@ const About = (props) => {
       </ul>
       <div className={styles.introCopy}>
         <p>
-          Starting out in the commercial sector of digital marketing I
-          discovered a passion for frontend development and decided to
-          transition my career into software engineering in 2021. I am skilled
-          in enriching the user experience with easy to use web applications
-          that are both well designed and functional.
+          Meticulous web developer with a passion for responsive web design and
+          creating mobile first applications. Proficient in front end
+          development technologies with a solid understanding of Javascript
+          framework React. Familiar with Git version control and Github.
+          Completed Front End Development course with The Learning People and
+          React course with Udemy.
         </p>
         <p>
           Reach out to discuss any new opportunities using the contact form
