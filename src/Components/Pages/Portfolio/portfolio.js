@@ -14,6 +14,12 @@ const Portfolio = (props) => {
           link="https://leecharltonh.github.io/pairs-game/"
         />
         <PortfolioItem
+          title="Expenses Form"
+          src={require("../../../Assets/Images/portfolio-expense-form.jpg")}
+          alt="Project 4 - Expense Form"
+          link="https://leecharltonh.github.io/expenses-form/"
+        />
+        <PortfolioItem
           title="Bear Ambition Personal Training"
           src={require("../../../Assets/Images/portfolio-bear-ambition.png")}
           alt="Project 2 - Bear Ambition"
