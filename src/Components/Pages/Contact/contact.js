@@ -75,7 +75,7 @@ const Contact = (props) => {
           ></textarea>
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="form-submit-btn">Submit</button>
         </div>
       </form>
     </Section>
