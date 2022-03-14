@@ -62,7 +62,7 @@ const About = (props) => {
           below!
         </p>
         <div>
-          <HashLink smooth to="/#contact">
+          <HashLink smooth to="/CV/#contact">
             <button type="submit" class="about-btn">Contact Me</button>
           </HashLink>
         </div>

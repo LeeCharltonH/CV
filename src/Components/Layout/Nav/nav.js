@@ -29,27 +29,27 @@ const Nav = (props) => {
     <nav className={styles.nav}>
       <ul id="navList" className={classNames(!navIconState && styles.hide)}>
         <li>
-          <HashLink smooth to="/#about">
+          <HashLink smooth to="/CV/#about">
             About
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#skills">
+          <HashLink smooth to="/CV/#skills">
             Skills
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#portfolio">
+          <HashLink smooth to="/CV/#portfolio">
             Portfolio
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#experience">
+          <HashLink smooth to="/CV/#experience">
             Experience
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#contact">
+          <HashLink smooth to="/CV/#contact">
             Contact
           </HashLink>
         </li>
