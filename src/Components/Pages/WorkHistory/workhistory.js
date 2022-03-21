@@ -1,5 +1,4 @@
 import Section from "../../Layout/Section/section";
-import styles from "./workhistorystyles.module.scss";
 import Accordion from "../../UI/Accordion/accordion";
 import { useState } from "react";
 import { useEffect } from "react";

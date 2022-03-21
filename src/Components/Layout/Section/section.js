@@ -7,7 +7,7 @@ const Section = (props) => {
 
   useEffect(() => {if (props.background === "white") {
     setSectionTop(true)}
-  }, []);
+  }, [props.background]);
 
   return (
     <section id={props.id} className={styles.section}>

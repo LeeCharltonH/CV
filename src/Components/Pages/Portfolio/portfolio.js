@@ -1,5 +1,4 @@
 import Section from "../../Layout/Section/section";
-import styles from "./portfoliostyles.module.scss";
 import PortfolioItem from "../../UI/PortfolioItem/portfolio";
 import Flex from "../../UI/Flex/flex";
 

@@ -60,6 +60,7 @@ const Nav = (props) => {
               <a
                 href="https://www.instagram.com/leecharltonhassall/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon
                   icon={["fab", "instagram"]}
@@ -68,7 +69,7 @@ const Nav = (props) => {
               </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/leehassall/" target="_blank">
+              <a href="https://www.linkedin.com/in/leehassall/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   className={styles.icon}
@@ -76,7 +77,7 @@ const Nav = (props) => {
               </a>
             </div>
             <div>
-              <a href="https://github.com/LeeCharltonH" target="_blank">
+              <a href="https://github.com/LeeCharltonH" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
                   className={styles.icon}

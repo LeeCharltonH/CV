@@ -1,6 +1,4 @@
 import styles from "./accordionstyles.module.scss";
-import { useState } from "react";
-import classNames from "classnames";
 
 const AccordionList = (props) => {
 

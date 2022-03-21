@@ -37,7 +37,7 @@ const Footer = (props) => {
           </ul>
           <ul>
             <li>
-              <a href="https://www.instagram.com/leecharltonhassall/" target="_blank">
+              <a href="https://www.instagram.com/leecharltonhassall/" rel="noreferrer" target="_blank">
                 <FontAwesomeIcon
                   icon={["fab", "instagram"]}
                   className={styles.icon}
@@ -45,7 +45,7 @@ const Footer = (props) => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/leehassall/" target="_blank">
+              <a href="https://www.linkedin.com/in/leehassall/" rel="noreferrer" target="_blank">
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   className={styles.icon}
@@ -53,7 +53,7 @@ const Footer = (props) => {
               </a>
             </li>
             <li>
-              <a href="https://github.com/LeeCharltonH" target="_blank">
+              <a href="https://github.com/LeeCharltonH" rel="noreferrer" target="_blank">
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
                   className={styles.icon}
