@@ -1,0 +1,65 @@
+@import "../../../Styles/combined.scss";
+
+.bubbleContainer {
+  margin: 3px;
+  width: 200px;
+  position: relative;
+  img {
+    width: 100px;
+  }
+}
+
+.bubbleItem {
+  width: 200px;
+  border-radius: 50%;
+  padding-top: 100%;
+  background-image: radial-gradient(
+    at 54% 58%,
+    rgba(255, 255, 255, 0.288),
+    rgba(255, 255, 255, 0.219) 10%,
+    rgba(255, 255, 255, 0.116),
+    rgba(255, 255, 255, 0.123),
+    rgba(255, 255, 255, 0.377),
+    rgba(255, 255, 255, 0.849) 80%
+  );
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.bubbleContent {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  p{
+      margin: 0;
+  }
+}
+
+.bubbleItem:hover {
+    animation: show ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0%{z-index: 1; opacity: 1;}
+    100%{z-index: -2; opacity: 0.5;}
+}
+
+@media (max-width: 900px){
+    .bubbleContainer {
+        width: 180px;
+    }
+    .bubbleItem {
+        width: 180px;
+    }
+}
+
+
+
