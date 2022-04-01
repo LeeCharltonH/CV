@@ -6,6 +6,12 @@ const Portfolio = (props) => {
   return (
     <Section id="portfolio" h2="Portfolio" background="white">
       <Flex>
+      <PortfolioItem
+          title="Problems Afoot Podiatry"
+          src={require("../../../Assets/Images/portfolio-problems-afoot.png")}
+          alt="Problems Afoot Podiatry"
+          link="https://problems-afoot-58652.web.app/"
+        />
         <PortfolioItem
           title="Pairs Game"
           src={require("../../../Assets/Images/portfolio-pairs.png")}
