@@ -7,6 +7,12 @@ const Portfolio = (props) => {
     <Section id="portfolio" h2="Portfolio" background="white">
       <Flex>
       <PortfolioItem
+          title="Spotify Search API"
+          src={require("../../../Assets/Images/portfolio-spotify-search.png")}
+          alt="Spotify Search API"
+          link="https://spotify-search-2d1d9.web.app/"
+        />
+      <PortfolioItem
           title="Problems Afoot Podiatry"
           src={require("../../../Assets/Images/portfolio-problems-afoot.png")}
           alt="Problems Afoot Podiatry"
