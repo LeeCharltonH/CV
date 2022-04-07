@@ -1,0 +1,27 @@
+@import "../../../Styles/combined.scss";
+
+.button {
+  background-color: $orange;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  min-width: 100px;
+  border: 3px solid $orange;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+
+.button:focus {
+    outline: 3px solid $blue;
+    outline-offset: 2px;
+    transition: all 0.3s ease;
+}

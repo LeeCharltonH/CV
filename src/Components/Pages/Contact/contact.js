@@ -1,6 +1,6 @@
-import Section from "../../Layout/Section/section";
 import styles from "./contactstyles.module.scss";
 import { useRef } from "react";
+import Button from "../../UI/button/button";
 
 const Contact = (props) => {
   const fNameRef = useRef();
@@ -45,7 +45,6 @@ const Contact = (props) => {
   };
 
   return (
-    <Section id="contact" h2="Contact" background="white">
       <form
         action="https://formspree.io/f/mvodevrl"
         method="post"
@@ -75,10 +74,9 @@ const Contact = (props) => {
           ></textarea>
         </div>
         <div>
-          <button type="submit" class="form-submit-btn">Submit</button>
+          <Button type="submit">Submit</Button>
         </div>
       </form>
-    </Section>
   );
 };
 

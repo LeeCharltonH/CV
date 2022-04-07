@@ -2,15 +2,15 @@
 
 .bubbleContainer {
   margin: 3px;
-  width: 200px;
+  width: 150px;
   position: relative;
   img {
-    width: 100px;
+    width: 50px;
   }
 }
 
 .bubbleItem {
-  width: 200px;
+  width: 150px;
   border-radius: 50%;
   padding-top: 100%;
   background-image: radial-gradient(
@@ -43,21 +43,18 @@
 }
 
 .bubbleItem:hover {
-    animation: show ease-in-out 0.5s;
-    animation-fill-mode: forwards;
+    transform: scale(1.02); 
+    -ms-transform: scale(1.02); 
+    -webkit-transform: scale(1.02); 
 }
 
-@keyframes show {
-    0%{z-index: 1; opacity: 1;}
-    100%{z-index: -2; opacity: 0.5;}
-}
 
 @media (max-width: 900px){
     .bubbleContainer {
-        width: 180px;
+        width: 140px;
     }
     .bubbleItem {
-        width: 180px;
+        width: 140px;
     }
 }
 

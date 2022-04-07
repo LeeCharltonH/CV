@@ -7,7 +7,6 @@ const Footer = (props) => {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerContent}>
-
           <ul>
             <li>
               <HashLink smooth to="/CV/#about">
@@ -29,15 +28,15 @@ const Footer = (props) => {
                 Experience
               </HashLink>
             </li>
-            <li>
-              <HashLink smooth to="/CV/#contact">
-                Contact
-              </HashLink>
-            </li>
+            <li onClick={props.modal} className={styles.contact}>Contact</li>
           </ul>
           <ul>
             <li>
-              <a href="https://www.instagram.com/leecharltonhassall/" rel="noreferrer" target="_blank">
+              <a
+                href="https://www.instagram.com/leecharltonhassall/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "instagram"]}
                   className={styles.icon}
@@ -45,7 +44,11 @@ const Footer = (props) => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/leehassall/" rel="noreferrer" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/leehassall/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   className={styles.icon}
@@ -53,7 +56,11 @@ const Footer = (props) => {
               </a>
             </li>
             <li>
-              <a href="https://github.com/LeeCharltonH" rel="noreferrer" target="_blank">
+              <a
+                href="https://github.com/LeeCharltonH"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
                   className={styles.icon}
@@ -61,7 +68,6 @@ const Footer = (props) => {
               </a>
             </li>
           </ul>
-
         </div>
         <p className={styles.copyright}>&#169; Lee Charlton-Hassall</p>
       </div>

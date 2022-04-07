@@ -2,11 +2,11 @@
 
 .nav {
   width: 100%;
-  min-height: 34px;
+  min-height: 55px;
   padding: 10px;
-  background-color: #23a6d5;;
+  background-color: #23a6d5;
   position: fixed;
-  z-index: 1000;
+  z-index: 4;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   ul {
@@ -33,6 +33,18 @@
       text-decoration: none;
     }
   }
+}
+
+.contact {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+  font-size: 1em; //set to 1em for desktop
+  cursor: pointer;
 }
 
 .navIcon1 {

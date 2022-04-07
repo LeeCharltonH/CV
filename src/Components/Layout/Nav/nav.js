@@ -1,4 +1,4 @@
-import styles from "./navstyles.module.css";
+import styles from "./navstyles.module.scss";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -6,6 +6,8 @@ import classNames from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = (props) => {
+  const modalHandler = props.modal;
+
   const [navIconState, setNavIcon] = useState(false);
 
   const navClick = () => {
@@ -48,10 +50,8 @@ const Nav = (props) => {
             Experience
           </HashLink>
         </li>
-        <li>
-          <HashLink smooth to="/CV/#contact">
-            Contact
-          </HashLink>
+        <li onClick={modalHandler} className={styles.contact}>
+          Contact
         </li>
         <div className={styles.navSocial}>
           <p>Socials</p>
@@ -69,7 +69,11 @@ const Nav = (props) => {
               </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/leehassall/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/leehassall/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   className={styles.icon}
@@ -77,7 +81,11 @@ const Nav = (props) => {
               </a>
             </div>
             <div>
-              <a href="https://github.com/LeeCharltonH" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/LeeCharltonH"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
                   className={styles.icon}

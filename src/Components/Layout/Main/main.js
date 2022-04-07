@@ -1,19 +1,18 @@
 import About from "../../Pages/About/about";
-import Portfolio from "../../Pages/Portfolio/portfolio";
+
 import Skills from "../../Pages/Skills/skills";
 import History from "../../Pages/WorkHistory/workhistory";
-import Contact from "../../Pages/Contact/contact";
 import styles from "./mainstyles.module.scss";
+import Portfolio from "../../Pages/Portfolio/portfolio";
 
 
 const Main = (props) => {
     return (
         <main className={styles.main}>
-            <About />
+            <About modal={props.modal} />
             <Skills />
             <Portfolio />
             <History />
-            <Contact />
         </main>
     )
 };

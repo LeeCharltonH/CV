@@ -23,22 +23,29 @@
 .icon {
   font-size: 1.6em;
 }
-button {
-  background-color: $orange;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 10px;
-  min-width: 100px;
-  border: 3px solid $orange;
-  transition: background-color 0.5s;
-}
-button:hover {
-  background-color: $orange;
-  color: black;
-  cursor: pointer;
-}
 
 .introCopy {
   max-width: 800px;
+}
+
+.aboutContainer{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.aboutItem {
+  width: 50%;
+  padding-right: 10px;
+}
+
+@media (max-width: 760px) {
+  .aboutContainer{
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .aboutItem {
+    width: 100%;
+    padding-right: 0;
+  }
 }

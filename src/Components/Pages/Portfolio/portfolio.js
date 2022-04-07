@@ -1,48 +1,59 @@
 import Section from "../../Layout/Section/section";
-import PortfolioItem from "../../UI/PortfolioItem/portfolio";
 import Flex from "../../UI/Flex/flex";
+import { useEffect, useState } from "react";
+import styles from "./portfoliostyles.module.scss";
+import Button from "../../UI/button/button";
 
 const Portfolio = (props) => {
+  useEffect(() => {
+    fetch(
+      "https://cv---experience-data-default-rtdb.europe-west1.firebasedatabase.app/portfolio.json"
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const portfolioItems = Object.keys(data).map((item) => {
+          return data[item];
+        });
+
+        setPortfolio(portfolioItems);
+      });
+  }, []);
+  const [portfolio, setPortfolio] = useState([]);
+
+  const portfolioContainer = portfolio.map((item) => {
+    return (
+      <div className={styles.portfolioContainer} key={item.id}>
+        <div className={styles.portfolioItem}>
+          <a href={item.project_url} target="_blank" rel="noreferrer">
+            {" "}
+            <img
+              width={"100%"}
+              src={require(`../../../Assets/Images/${item.img}`)}
+              alt={item.title}
+            />
+          </a>
+        </div>
+        <div className={styles.portfolioItem}>
+          <h2>{item.title}</h2>
+          <ul>
+            {item.skills.map((skill) => {
+              return <li key={Math.random()}>{skill}</li>;
+            })}
+          </ul>
+          <p>{item.description}</p>
+          <a href={item.project_url} target="_blank" rel="noreferrer">
+            <Button>View Project</Button>
+          </a>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <Section id="portfolio" h2="Portfolio" background="white">
-      <Flex>
-      <PortfolioItem
-          title="Spotify Search API"
-          src={require("../../../Assets/Images/portfolio-spotify-search.png")}
-          alt="Spotify Search API"
-          link="https://spotify-search-2d1d9.web.app/"
-        />
-      <PortfolioItem
-          title="Problems Afoot Podiatry"
-          src={require("../../../Assets/Images/portfolio-problems-afoot.png")}
-          alt="Problems Afoot Podiatry"
-          link="https://problems-afoot-58652.web.app/"
-        />
-        <PortfolioItem
-          title="Pairs Game"
-          src={require("../../../Assets/Images/portfolio-pairs.png")}
-          alt="Project 1 - Pairs Game"
-          link="https://leecharltonh.github.io/pairs-game/"
-        />
-        <PortfolioItem
-          title="Bear Ambition Personal Training"
-          src={require("../../../Assets/Images/portfolio-bear-ambition.png")}
-          alt="Project 2 - Bear Ambition"
-          link="https://www.bearambition.com/"
-        />
-        <PortfolioItem
-          title="Expenses Form"
-          src={require("../../../Assets/Images/portfolio-expense-form.jpg")}
-          alt="Project 4 - Expense Form"
-          link="https://leecharltonh.github.io/expenses-form/"
-        />
-        <PortfolioItem
-          title="Personal Portfolio V1"
-          src={require("../../../Assets/Images/portfolio-personal-portfolio.png")}
-          alt="Project 3 - Personal Portfolio v1"
-          link="https://leecharltonh.github.io/personal-portfolio/"
-        />
-      </Flex>
+      <Flex>{portfolioContainer}</Flex>
     </Section>
   );
 };
