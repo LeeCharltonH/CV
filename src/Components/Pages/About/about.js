@@ -44,7 +44,7 @@ const About = (props) => {
 
       <div className={styles.aboutContainer}>
         <div className={styles.aboutItem}>
-        <h1>Lee Charlton-Hassall</h1>
+          <h1>Lee Hassall</h1>
           <h2>Front End Developer</h2>
           <ul className={styles.contactDetails}>
             <li>
@@ -63,7 +63,7 @@ const About = (props) => {
         </div>
         <div className={`${styles.introCopy} ${styles.aboutItem}`}>
           <p>
-            Meticulous React web developer with 6 years experience within the digital
+            Web developer with 2 years experience within the digital
             industry. Proficient in front end development
             technologies (HTML5, CSS3 & Javascript) with a solid
             understanding of Javascript framework React. Familiar with Git
@@ -75,7 +75,7 @@ const About = (props) => {
             below!
           </p>
           <div>
-              <Button onClick={props.modal}>Contact Me</Button>
+            <Button onClick={props.modal}>Contact Me</Button>
           </div>
         </div>
       </div>

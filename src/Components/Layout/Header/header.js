@@ -5,7 +5,7 @@ const Header = (props) => {
     <header className={styles.header}>
       <img
         src={require("../../../Assets/Images/profilepic.jpg")}
-        alt="Lee Charlton-Hassall CV"
+        alt="Lee Hassall CV"
         id="profile-pic"
       />
     </header>
